@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html templates</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function functionAlert(msg, myYes) {
+       var confirmBox = $("#confirm");
+       confirmBox.find(".message").text(msg);
+       confirmBox.find(".yes").unbind().click(function() {
+          confirmBox.hide();
+       });
+       confirmBox.find(".yes").click(myYes);
+       confirmBox.show();
+    }
+ </script>
+
+       <style>
+          #confirm {
+            display: none;
+            background-color: #e0e0eb;
+            color: #000000;
+            border: 1px solid #aaa;
+            position: fixed;
+            width: 40%;
+            height: 25%;
+            left: 60%;
+            top: 10%;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+         #confirm button {
+            background-color: #FFFFFF;
+            display: inline-block;
+            border-radius: 12px;
+            border: 4px solid #aaa;
+            padding: 5px;
+            text-align: center;
+            width: 60px;
+            cursor: pointer;
+         }
+         #confirm .message {
+            text-align: left;
+         }
+
+         #firstdiv{
+           display: block;
+         }
+         #seconddiv{
+           display: none;
+         }
+         #thirddiv{
+           display: none;
+         }
+       </style>
+    </head>
+    <body  onload="functionAlert()">
+
+
+ 
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="width: 100%;">
+        <a class="navbar-brand" href="#" style="font-family: 'Akaya Kanadaka', cursive;">TW</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/template">HTML Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/upload">ADD_YOUR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Learn HTML</a>
+          </li>
+        </ul>
+      </nav>
+   
+
+
+<div id="confirm" class="container p-3 my-3">
+  <div class="message"><h3>YOU CAN UPLOAD YOUR CREATIVITY TOO</h3><br><p>So what are you waiting for.</p></div>
+  <a href="/upload" class="btn btn-dark" style="margin-left: 80%;">UPLOAD</a><br>
+  <button class="yes" >OK</button>
+</div>
+        
+        
+
+<br><br><br>
+
+ <div class="container" style="text-align: center">
+    <div class="btn-group">
+        <button type="button" class="btn btn-dark" disabled>Simple</button>
+        
+    <div class="btn-group">
+        <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">more</button>
+        <div class="dropdown-menu">
+        <a href="#" class="dropdown-item" onclick="firstD()">Simple</a>
+        <div class="dropdown-header">with BOOTSTRAP</div>
+        <a href="#" class="dropdown-item" onclick="secondD()">BSTRP TEMPLATE</a>
+        <a href="#" class="dropdown-item" onclick="thirdD()">Forms with BSTRP</a>
+        <a href="#" class="dropdown-item" >Payment page desgine</a>
+        </div>
+        
+        </div>
+        </div>
+    </div>
+
+
+   
+<div class="container" id="firstdiv">
+  <h1>this is the first division</h1>
+  
+
+  <div class="container-fluid" >
+    <div class="container p-3 my-3 border" style="background-color: #f2f2f2;">
+
+       <div class="container p-3 my-3 border" style="background-color: #d9d9d9;">
+     <img src="/images/sample1.png" alt="sample image" class="shadow p-3 mb-5 bg-white rounded" style="height: 43%; width:45%;">
+      <img src="/images/sample1-a.png" alt="sample image" class="shadow p-3 mb-5 bg-white rounded" style="height: 54%; width:45%;margin-left:8%;">
+       </div>
+       <div class="container p-3 my-3 border" style="background-color: #bfbfbf;">
+      <br><h3 style="color: white;"><ul>
+          <li>Simple Screen Divider</li>
+      </ul></h3>
+     <a href="/htmlfiles/simple_screen_divider.html" class="btn btn-dark" download="template" style="margin-left: 80px;">download</a>
+     <a href="/htmlfiles/simple_screen_divider.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer" >Try</a>
+       <br><br> 
+       <a href="/template" style="text-decoration: none; margin-left:80% ;color:#334d4d;">for more Screen Divider...</a>
+       </div>
+       <blockquote class="blockquote" style="text-align: end;">
+         <footer class="blockquote-footer" style="color: black;"><span style='font-size:25px;'>&#9889;</span> Creativity by webisite</footer>
+     </blockquote>
+     </div>
+     
+    
+</div>
+
+</div>
+<script>
+function firstD(){
+  document.getElementById("firstdiv").style.display="block";
+    document.getElementById("seconddiv").style.display="none";
+  document.getElementById("thirddiv").style.display="none";
+
+}
+</script>
+
+
+
+
+<div class="container" id="seconddiv">
+  <h1>this is the second division</h1>
+
+  <br><br>
+   <div class="container-fluid" >
+       <div class="container p-3 my-3 border" style="background-color: #f2f2f2;">
+
+          <div class="container p-3 my-3 border" style="background-color: #d9d9d9; ">
+              <img src="/images/style-2_image.png" alt="form-1" class="shadow p-3 mb-5 bg-white rounded" style="height: 100%; width:100%;">
+          
+          </div>
+          <div class="container p-3 my-3 border" style="background-color: #bfbfbf;">
+         <br><h3 style="color: white;"><ul>
+             <li>Style-2 html template using bootstrap</li>
+         </ul></h3>
+        <a href="/htmlfiles/style-2.zip" class="btn btn-dark" download="template" style="margin-left: 80px;">download</a>
+        <a href="/htmlfiles/style-2.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer" >Try</a>
+          <br><br> 
+          <a href="/template" style="text-decoration: none; margin-left:75% ;color:#334d4d;">for more HTML templates...</a>
+          </div>
+          <blockquote class="blockquote" style="text-align: end;">
+            <footer class="blockquote-footer" style="color: black;"><span style='font-size:25px;'>&#9889;</span> Creativity by webisite</footer>
+        </blockquote>
+        </div>
+
+
+        {{!-- this is style-1 template --}}
+<br><br>
+   <div class="container-fluid" >
+       <div class="container p-3 my-3 border" style="background-color: #f2f2f2;">
+
+          <div class="container p-3 my-3 border" style="background-color: #d9d9d9; ">
+              <img src="/images/style-1.png" alt="form-1" class="shadow p-3 mb-5 bg-white rounded" style="height: 100%; width:100%;">
+          
+          </div>
+          <div class="container p-3 my-3 border" style="background-color: #bfbfbf;">
+         <br><h3 style="color: white;"><ul>
+             <li>Style-1 html template using bootstrap</li>
+         </ul></h3>
+        <a href="/htmlfiles/desgine-1.html" class="btn btn-dark" download="template" style="margin-left: 80px;">download</a>
+        <a href="/htmlfiles/desgine-1.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer" >Try</a>
+          <br><br> 
+          <a href="/template" style="text-decoration: none; margin-left:75% ;color:#334d4d;">for more HTML templates...</a>
+          </div>
+          <blockquote class="blockquote" style="text-align: end;">
+            <footer class="blockquote-footer" style="color: black;"><span style='font-size:25px;'>&#9889;</span> Creativity by webisite</footer>
+        </blockquote>
+        </div>
+        
+       
+   </div>
+        
+       
+   </div>
+</div>
+<script>
+function secondD(){
+  document.getElementById("firstdiv").style.display="none";
+    document.getElementById("seconddiv").style.display="block";
+  document.getElementById("thirddiv").style.display="none";
+
+}
+</script>
+
+
+
+
+<div class="container" id="thirddiv">
+  <h1>this is the third division</h1>
+  <br><br>
+   <div class="container-fluid" >
+       <div class="container p-3 my-3 border" style="background-color: #f2f2f2;">
+
+          <div class="container p-3 my-3 border" style="background-color: #d9d9d9; ">
+              <img src="/images/form-1.png" alt="form-1" class="shadow p-3 mb-5 bg-white rounded" style="height: 100%; width:100%;">
+          
+          </div>
+          <div class="container p-3 my-3 border" style="background-color: #bfbfbf;">
+         <br><h3 style="color: white;"><ul>
+             <li>Simple Login page using bootstrap</li>
+         </ul></h3>
+        <a href="/htmlfiles/form-1.html" class="btn btn-dark" download="template" style="margin-left: 80px;">download</a>
+        <a href="/htmlfiles/form-1.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer" >Try</a>
+          <br><br> 
+          <a href="/template" style="text-decoration: none; margin-left:70% ;color:#334d4d;">for more login & signup templates...</a>
+          </div>
+          <blockquote class="blockquote" style="margin-left: 80%;">
+            <footer class="blockquote-footer" style="color: black;"><span style='font-size:25px;'>&#9889;</span> Creativity by webisite</footer>
+        </blockquote>
+        </div>
+        
+       
+   </div>
+
+
+
+   <br><br>
+   <div id="demo" class="carousel slide" data-ride="carousel" style="height: 50%; width:80%; background-color:#d9d9d9; padding-top:3%; padding-bottom:1%; margin-left:10%;">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    
+  </ul>
+
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/htmlfiles/loginBS-1.png" alt="Los Angeles" style="height: 50%; width:70%; margin-left:15%;">
+    </div>
+    <div class="carousel-item">
+      <img src="/htmlfiles/signUpBS-1.png " alt="Chicago" style="height: 50%; width:70%; margin-left:15%;">
+    </div>
+   
+  </div>
+
+  <!-- Left and right controls -->
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next" >
+    <span class="carousel-control-next-icon" style="color: tomato;"></span>
+  </a>
+
+ <div class="container p-3 my-3 border" style="background-color: #bfbfbf;">
+         <br><h3 style="color: white;"><ul>
+             <li>Simple Login page using bootstrap</li>
+            
+         </ul></h3>
+          <p style="color: white; margin-left:5%;">This is Login+signUp template with BSTRP and amazing CSS, you can also modify it according to your need and usually if you know little about 
+                 desgining html pages you will be able to change this .
+             </p>
+        <a href="/htmlfiles/L+S.zip" class="btn btn-dark" download="template" style="margin-left: 80px;">download</a>
+        <a href="/htmlfiles/loginBS-1.html" class="btn btn-dark" target="_blank" rel="noopener noreferrer" >Try</a>
+          <br><br> 
+          <a href="/template" style="text-decoration: none; margin-left:65% ;color:#334d4d;">for more login & signup templates...</a>
+          </div>
+<blockquote class="blockquote" style="margin-left: 70%;">
+            <footer class="blockquote-footer" style="color: black;" ><span style='font-size:25px;'>&#9889;</span> Creativity by webisite</footer>
+        </blockquote>
+</div>
+
+
+
+</div>
+<script>
+function thirdD(){
+  document.getElementById("firstdiv").style.display="none";
+    document.getElementById("seconddiv").style.display="none";
+  document.getElementById("thirddiv").style.display="block";
+
+}
+</script>
+
+    <br><br><br><br><br><br>
+        
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+
+ <!--this is footer section-->
+        
+                <img src="footer-for-web.png" alt="decoration-image" style="margin-left: 4%; height:10%; width: 30%;">
+                <img src="footer-for-web.png" alt="decoration-image" style="height:10%; width: 30%;">
+                <img src="footer-for-web.png" alt="decoration-image" style="height:10%; width: 30%;">
+        
+       
+
+    </body>
+</html>
