@@ -11,9 +11,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>File Uploading</title>
+    <style>
+      .back-image{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        height: 30%;
+        width: 80%;
+        background-color: #cccccc;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+      }
+
+      .sudhaar{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(255, 255, 255);
+  padding: 10px;
+
+      }
+
+     
+    </style>
 </head>
  
-<body>
+<body style="color: #666666;">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="width: 100%;">
     <a class="navbar-brand" href="#" style="font-family: 'Akaya Kanadaka', cursive;">TW</a>
     <ul class="navbar-nav">
@@ -24,52 +46,43 @@
         <a class="nav-link" href="/template">HTML Templates</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/upload">ADD_YOUR</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Learn HTML</a>
+        <a class="nav-link" href="/send">ADD_YOUR</a>
       </li>
     </ul>
   </nav>
+  <br><br><br><br><br><br>
+  <div class="back-image" >
+    <h3 style="color: black; text-align: center;">Click to redirect</h3>
+    <div class="container p-3 my-3" style="background-color: #8c8c8c; ">
+      <div class="sudhaar">
+      <a class="btn btn-dark" style="margin-left: 40%; " href="mailto:templateworldtw2021@gmail.com?subject=..<Please%20Enter%20Suitable%20Heading>..&body=please%20DESCRIBE%20about%20template%20in%20Brief%20ALSO%20SEND%20FILE%20AS%20ATTACHMENT%20after%20also%20add%20your%20name">EMAIL YOUR CREATIVITY</a>
+    </div>
+    </div>
     
-    <div class="container p-3 my-3" style="margin-left: 15%;margin-top:30%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: #e0e0eb;">
-        <h3 style="text-align: left;">Send Your Creativity</h3>
-        <div class="container p-3 my-3" style="background-color: #f0f0f5;">
-        <form action="/milgaya" method="POST" enctype="multipart/form-data" class="was-validated">
-            <div class="form-group">
-                <label for="name">Your Valid E-mail : </label>
-                <input  class='form-control' type="email" id="name" placeholder="Name"
-                       value="" name="name" required>
-                       <div class="valid-feedback">ok.</div>
-                       <div class="invalid-feedback">please enter valid email. </div>
-
-            </div>
-            <div class="form-group">
-                <label for="desc">Type: </label>
-                <textarea class="form-control" id="desc" name="pesc" value="" rows="2"
-                          placeholder="Description" required>
-                </textarea>
-                <div class="valid-feedback">ok.</div>
-                       <div class="invalid-feedback">please enter in this field</div>
-            </div>
-            <div class="form-group">
-                <label for="image">Upload File .html / .zip(if css is in another file) :<a style="color:green;">Rename your file with your name ( firstname_lastname.html )</a> </label>
-                <input class ="form-control" type="file" id="image"
-                       name="image" value=""  required>
-                       <div class="valid-feedback">ok.</div>
-                       <div class="invalid-feedback">please enter in this field</div>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-dark">Submit</button>
-            </div>
-        </form>
-    </div>
-    </div>
+  </div>
+    
+  <div class="container p-3 my-3 ">
+    <h3>NOTE :</h3>
+    <p></p><strong>No need to enter any email,</strong> it is already present you just need to attached your html / zip file.</p><br>
+    <ul>
+      <li>Also send your name or rename your file<kbd>with your name</kbd>  </li>
+      <li>if you have single .html page which contain CSS property itself than OK. but if your CSS is present in another file than make .zip file and then send.</li>
+      <li>You can also send javascript pages, which makes css more stronger</li>
+    </ul>
+    <p><strong> this above link not working than please share your CREATIVITY to- </strong><kbd>templateworldtw2021@gmail.com</kbd> </p>
+  </div>
  
    
  
-    <a class="btn btn-dark" style="margin-left: 80%;" href="mailto:template@gmail.com?subject=..<Please%20Enter%20Suitable%20Heading>..&body=please%20DESCRIBE%20about%20template%20in%20Brief%20ALSO%20SEND%20FILE%20AS%20ATTACHMENT%20after%20also%20add%20your%20name">Email_Your_CREATIVITY</a>
-    
+  <br><br><br><br>
+  <!--this is footer section-->
+
+  <img src="footer-for-web.png" alt="decoration-image" style="margin-left: 4%; height:10%; width: 30%;">
+  <img src="footer-for-web.png" alt="decoration-image" style="height:10%; width: 30%;">
+  <img src="footer-for-web.png" alt="decoration-image" style="height:10%; width: 30%;">
+
+ 
+   
 </body>
  
 </html>
