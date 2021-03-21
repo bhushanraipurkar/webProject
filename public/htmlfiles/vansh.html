@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <style>
+          #first{
+            display: block;  
+          }
+          #second{
+              display: none;
+          }
+          #third{
+              display:none;
+          }
+       </style>
+   </head>
+   <body>
+      <div class="container-fluid">
+       <h1 style="text-align: center;">HEADING WILL APPEAR HERE</h1>
+       </div>
+       
+       <div class="container p-3 my-3" style="margin-left: 40%; ">
+       <div class="btn-group">
+  <a href="#" type="button" class="btn btn-dark" onclick="firstfun()" >first</a>
+  <a href="#" type="button" class="btn btn-dark" onclick="secondfun()">second</a>
+  <a href="#" type="button" class="btn btn-dark" onclick="thirdfun()">third</a>
+</div>
+       </div>
+       
+       <div class="container p-3 ny-3 border" id="first" style="background-color: #f2f2f2;">
+       <h1 style="text-align: center;">first Div</h1>
+           <br><br><br><br><br>
+           <blockquote class="blockquote" style="text-align: center">
+    <p>“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.”</p>
+        <footer class="blockquote-footer" >Winston Churchill</footer>
+    </blockquote>
+       </div>
+       <script>
+       function firstfun(){
+           document.getElementById("first").style.display="block";
+           document.getElementById("second").style.display="none";
+           document.getElementById("third").style.display="none";
+       }
+       </script>
+       <div class="container p-3 my-3 border" id="second" style="background-color: #f2f2f2;">
+       <h1 style="text-align: center;">second Div</h1>
+           <br><br><br><br><br>
+           <blockquote class="blockquote" style="text-align: center">
+           <p>“You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.”</p>
+               <footer class="blockquote-footer">Unknown</footer>
+           </blockquote>
+       </div>
+       <script>
+       function secondfun(){
+           document.getElementById("first").style.display="none";
+           document.getElementById("second").style.display="block";
+           document.getElementById("third").style.display="none";
+       }
+       </script>
+       <div class="container p-3 my-3 border" id="third" style="background-color: #f2f2f2;">
+       <h1 style="text-align: center;">third Div</h1>
+           <br><br><br><br><br>
+           <blockquote class="blockquote" style="text-align: center">
+           <p>“If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.”</p>
+               <footer class="blockquote-footer">Steve Jobs</footer>
+           </blockquote>
+       </div>
+       <script>
+       function thirdfun(){
+           document.getElementById("first").style.display="none";
+           document.getElementById("second").style.display="none";
+           document.getElementById("third").style.display="block";
+       }
+       </script>
+       <br><br><br><br>
+       <div class="container p-3 my-3 ">
+       <strong>Remove the content of Division add your content but note that do not remove the Script tag and id tag cause it is very importent for nevigation,
+       and it's absolutely free to use anyone can use it for his project.</strong>
+           </div>
+   </body>
+</html>
